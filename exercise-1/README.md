@@ -50,7 +50,8 @@ gcloud container clusters create guestbook \
       --cluster-version=1.10 \
       --num-nodes 3 \
       --machine-type n1-standard-2 \
-      --scopes cloud-platform
+      --scopes cloud-platform   \
+      --region=asia-southeast1
 ```
 
 Warning: The scopes parameter is important for this lab. Scopes determine what Google Cloud Platform resources these newly created instances can access.  By default, instances are able to read from Google Cloud Storage, write metrics to Google Cloud Monitoring, etc. For our lab, we add the cloud-platform scope to give us more privileges, such as writing to Cloud Storage as well.
