@@ -110,7 +110,10 @@ sudo apt-get update
 sudo apt-get install ansible
 ```
 
-
-
+Setup SSH Keys
+```
+-c and --ask-pass options:
+$ ssh-keygen -t rsa
+```
 
 #### [Continue to Exercise 1](../exercise-1/README.md)
