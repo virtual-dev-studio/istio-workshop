@@ -97,6 +97,19 @@ Note: When you run gcloud on your own machine, the config settings will be persi
 Clone from the current repository, e.g.
 
   `git clone https://github.com/retroryan/istio-workshop`
+  
+  
+  ## [Optional] Workshop Setup
+
+###  Install ansible on a Google Cloud Console
+
+```
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+```
+
 
 
 
