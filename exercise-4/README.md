@@ -49,7 +49,7 @@ If you look at the pod status, some of the pods will show a `Pending` state. Tha
 4. We can easily spin up another Compute Engine instance to append to the cluster.
 
     ```
-    gcloud container clusters resize guestbook --size=5 --region=_[REGION]_
+    gcloud container clusters resize guestbook --size=5 --region=*[REGION]*
     gcloud compute instances list
     ```
 
