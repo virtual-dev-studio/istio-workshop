@@ -5,7 +5,7 @@
 1. Scale the number of replicas of your Hello World service by running the following commands:
 
     ```sh
-    kubectl get deployment
+    kubectl get deployment --all-namespaces
 
     NAME                    DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
     helloworld-service-v1   1         1         1            1           1m
@@ -16,14 +16,14 @@
     ```
 
     ```sh
-    kubectl get deployment
+    kubectl get deployment --all-namespaces
 
     NAME                    DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
     helloworld-service-v1   4         4         4            4           1m
     ```
 
     ```sh
-    kubectl get pods
+    kubectl get pods --all-namespaces
 
     NAME                          READY     STATUS    RESTARTS   AGE
     helloworld-service-v1-...    1/1       Running   0          1m
