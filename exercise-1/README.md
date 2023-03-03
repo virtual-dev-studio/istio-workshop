@@ -80,7 +80,28 @@ You can view the Kubernets Cluster in the Web Console by clicking on the hamburg
 
 ![Google Cloud Kubernetes Engine](../images/k8console.png)
 
+```sh
+gcloud container clusters create guestbook \
+      --cluster-version=1.10 \
+      --num-nodes 3 \
+      --machine-type n1-standard-2 \
+      --scopes cloud-platform   \
+      --region=asia-southeast1
+```
 
+Warning: The scopes parameter is important for this lab. Scopes determine what Google Cloud Platform resources these newly created instances can access.  By default, instances are able to read from Google Cloud Storage, write metrics to Google Cloud Monitoring, etc. For our lab, we add the cloud-platform scope to give us more privileges, such as writing to Cloud Storage as well.
+
+
+#### Verify kubectl
+  `kubectl version`
+
+```sh
+Client Version: version.Info{Major:"1", Minor:"11+", GitVersion:"v1.11.9-dispatcher", GitCommit:"e3f5193e8f1091a162af7e17a781e6a3129bcfd0", GitTreeState:"clean", BuildDate:"2019-03-28T18:13:46Z", GoVersion:"go1.10.8",
+ Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"11+", GitVersion:"v1.11.8-gke.6", GitCommit:"394ee507d00f15a63cef577a14026096c310698e", GitTreeState:"clean", BuildDate:"2019-03-30T19:31:43Z", GoVersion:"go1.10.8b4", Co
+mpiler:"gc", Platform:"linux/amd64"}
+
+```
 
 ## Explanation
 #### By Ray Tsang [@saturnism](https://twitter.com/saturnism)

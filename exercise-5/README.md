@@ -136,3 +136,7 @@ Congratulations! You have installed Istio into the Kubernetes cluster. A lot has
 * Istio Sidecar Injector (we'll take a look next next section)
 
 #### [Continue to Exercise 6 - Creating a Service Mesh with Istio Proxy](../exercise-6/README.md)
+
+
+#### Install on GCP
+https://cloud.google.com/kubernetes-engine/docs/tutorials/installing-istio

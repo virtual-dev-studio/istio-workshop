@@ -44,8 +44,26 @@ Clone from the current repository, e.g.
 
   `git clone https://github.com/retroryan/istio-workshop`
 
+###  Install ansible on a Google Cloud Console
+
+```
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+```
+
+Setup SSH Keys
+```
+-c and --ask-pass options:
+$ ssh-keygen -t rsa
+```
+
+  ## [Optional] Workshop Setup
+
 ## Optional - Local Setup
 
 You can setup the Google Cloud SDK locally but that is out of the scope of this workshop.  See the [Cloud SDK for more information](https://cloud.google.com/sdk/)
+
 
 #### [Continue to Exercise 1](../exercise-1/README.md)
